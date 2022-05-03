@@ -1,8 +1,8 @@
 {
   "root": true,
   "api": {
-    "projectId": "yourproj",
-    "dataset": "yourset"
+    "projectId": "ueeoquch",
+    "dataset": "production"
   },
   "project": {
     "name": "SanityCodingDemo"
@@ -15,7 +15,8 @@
     "@sanity/desk-tool",
     "@sanity/production-preview",
     "iframe-pane",
-    "asset-source-unsplash"
+    "asset-source-unsplash",
+    "media"
   ],
   "env": {
     "development": {
@@ -32,6 +33,10 @@
     {
       "implements": "part:@sanity/production-preview/resolve-production-url",
       "path": "./resolveProductionUrl.ts"
+    },
+    {
+      "name": "part:@sanity/desk-tool/structure",
+      "path": "./deskStructure.ts"
     }
   ]
 }
